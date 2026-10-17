@@ -1,3 +1,13 @@
+## DICOM conversion for neuroimaging workflows
+
+This is a development fork of [dcm2niix](https://github.com/rordenlab/dcm2niix), a converter from scanner DICOM data to NIfTI images and BIDS JSON sidecars. The upstream tool is useful at the boundary between imaging acquisition and research analysis, where image geometry and acquisition metadata need to travel together.
+
+**Merged contributions:** [PR #1046](https://github.com/rordenlab/dcm2niix/pull/1046) pins the optional Cloudflare zlib source revision, and [PR #1047](https://github.com/rordenlab/dcm2niix/pull/1047) forwards an explicitly selected CMake toolchain to superbuild projects. Both were merged into upstream's `development` branch; release inclusion is a separate step.
+
+See the [upstream releases](https://github.com/rordenlab/dcm2niix/releases) for packaged versions and [compilation guide](https://github.com/rordenlab/dcm2niix/blob/master/COMPILE.md) for build options. The original README follows, with supported formats and usage details. Review the [default-branch comparison](https://github.com/rordenlab/dcm2niix/compare/master...jdotc1:master) for this checkout.
+
+---
+
 # dcm2niix
 
 [![Build](https://github.com/rordenlab/dcm2niix/actions/workflows/build.yml/badge.svg)](https://github.com/rordenlab/dcm2niix/actions/workflows/build.yml)
